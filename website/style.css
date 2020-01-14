@@ -107,8 +107,6 @@ body {
   width: 100%;
 }
 
-
-
 .register-col-1 {
   float: left;
   margin-top: 5px;
@@ -136,6 +134,23 @@ label {
 
 .form-box:focus {
   border-color: #bbe1fa;
+}
+
+.register-submit {
+  background-color: #F0F0F0;
+  border: 2px solid #0f4c75;
+  border-radius: 4px;
+  color: #0f4c75;
+  float: right;
+  font-family: Segoe UI, Arial, sans-serif;
+  font-weight: bolder;
+  margin-top: 5px;
+  padding: 12px 20px;
+}
+
+.register-submit:hover {
+  background-color: #0f4c75;
+  color: #F0F0F0;
 }
 
 .footer {
@@ -181,5 +196,5 @@ label {
     margin-top: 0px;
     width: 100%;
   }
-  
+
 }
