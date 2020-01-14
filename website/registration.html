@@ -6,6 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="style.css">
   <title>Ryan Dennis Online Shop - Registration</title>
+  <script type="text/javascript">
+
+    function validInput() {
+      alert("All inputs are valid. Thank you!");
+    }
+
+  </script>
 </head>
 
 <body>
@@ -21,13 +28,13 @@
     <h1 class="content-header-1">Register</h1>
     <p class="register-text">Fields that are required are marked with an asterisk (<span class="asterisk">*</span>).</p>
     <div class="registration-form">
-      <form action="#" method="post">
+      <form action="#" method="post" onsubmit="validInput()">
         <div class="register-row">
           <div class="register-col-1">
             <label for="first-name">First Name (<span class="asterisk">*</span>):</label>
           </div>
           <div class="register-col-2">
-            <input class="form-box" type="text" name="first-name" placeholder="First Name" required>
+            <input class="form-box" type="text" name="first-name" placeholder="First Name" maxlength="20" title="Enter no more than 20 characters" required>
           </div>
         </div>
         <div class="register-row">
@@ -35,7 +42,77 @@
             <label for="last-name">Last Name:</label>
           </div>
           <div class="register-col-2">
-            <input class="form-box" type="text" name="last-name" placeholder="Last Name"><br>
+            <input class="form-box" type="text" name="last-name" placeholder="Last Name" maxlength="20" title="Enter no more than 20 characters"><br>
+          </div>
+        </div>
+        <div class="register-row">
+          <div class="register-col-1">
+            <label for="gender">Gender (<span class="asterisk">*</span>):</label>
+          </div>
+          <div class="register-col-2">
+            <select class="form-box" name="gender" required>
+              <option value="" disabled selected hidden></option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+              <option value="prefer-not">Prefer not to say</option>
+            </select>
+          </div>
+        </div>
+        <div class="register-row">
+          <div class="register-col-1">
+            <label for="email-address">Email Address (<span class="asterisk">*</span>):</label>
+          </div>
+          <div class="register-col-2">
+            <input class="form-box" type="email" name="email-address" placeholder="Email Address"><br>
+          </div>
+        </div>
+        <div class="register-row">
+          <div class="register-col-1">
+            <label for="address-line-1">Address Line 1 (<span class="asterisk">*</span>):</label>
+          </div>
+          <div class="register-col-2">
+            <input class="form-address-box" type="text" name="address-line-1" placeholder="Address Line 1" required>
+          </div>
+        </div>
+        <div class="register-row">
+          <div class="register-col-1">
+            <label for="address-line-2">Address Line 2 (<span class="asterisk">*</span>):</label>
+          </div>
+          <div class="register-col-2">
+            <input class="form-address-box" type="text" name="address-line-2" placeholder="Address Line 2" required>
+          </div>
+        </div>
+        <div class="register-row">
+          <div class="register-col-1">
+            <label for="address-line-3">Address Line 3:</label>
+          </div>
+          <div class="register-col-2">
+            <input class="form-address-box" type="text" name="address-line-3" placeholder="Address Line 3">
+          </div>
+        </div>
+        <div class="register-row">
+          <div class="register-col-1">
+            <label for="address-town">Town (<span class="asterisk">*</span>):</label>
+          </div>
+          <div class="register-col-2">
+            <input class="form-address-box" type="text" name="address-town" placeholder="Town" required>
+          </div>
+        </div>
+        <div class="register-row">
+          <div class="register-col-1">
+            <label for="address-county">County (<span class="asterisk">*</span>):</label>
+          </div>
+          <div class="register-col-2">
+            <input class="form-address-box" type="text" name="address-county" placeholder="County" required>
+          </div>
+        </div>
+        <div class="register-row">
+          <div class="register-col-1">
+            <label for="address-postcode">Postcode (<span class="asterisk">*</span>):</label>
+          </div>
+          <div class="register-col-2">
+            <input class="form-address-box" id="address-postcode" type="text" name="address-postcode" placeholder="Postcode" required>
           </div>
         </div>
         <input class="register-submit" type="submit" value="Submit">

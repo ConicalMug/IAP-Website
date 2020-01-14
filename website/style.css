@@ -19,7 +19,6 @@ body {
   line-height: 25px;
   overflow: hidden;
   padding: 20px 10px;
-  position: sticky;
   text-align: center;
   top: 0;
 }
@@ -127,6 +126,7 @@ label {
   border: 2px solid #0f4c75;
   border-radius: 2px;
   display: inline;
+  font-family: Segoe UI, Arial, sans-serif;
   resize: vertical;
   padding: 10px;
   width: 100%;
@@ -134,6 +134,29 @@ label {
 
 .form-box:focus {
   border-color: #bbe1fa;
+}
+
+.form-address-box {
+  border: 2px solid #0f4c75;
+  border-radius: 2px;
+  display: inline;
+  font-family: Segoe UI, Arial, sans-serif;
+  resize: vertical;
+  padding: 10px;
+  width: 80%;
+}
+
+#address-postcode {
+  width: 40%;
+}
+
+.form-address-box:focus {
+  border-color: #bbe1fa;
+}
+
+.registration-form select {
+  font-family: Segoe UI, Arial, sans-serif;
+  width: 30%;
 }
 
 .register-submit {
@@ -192,9 +215,17 @@ label {
 
 @media screen and (max-width: 1000px) {
 
+  .content-register {
+    width: 80%;
+  }
+
   .register-col-1, .register-col-2 {
     margin-top: 0px;
     width: 100%;
+  }
+
+  .registration-form select {
+    width: 60%;
   }
 
 }
