@@ -75,6 +75,10 @@ body {
   font-size: 18px;
 }
 
+.register-text {
+  font-size: 20px;
+}
+
 .asterisk {
   color: #ff0000;
 }
@@ -87,8 +91,51 @@ body {
   margin: auto;
   margin-bottom: 10px;
   margin-top: 10px;
+  overflow: hidden;
   padding: 10px;
   width: 60%;
+}
+
+.registration-form {
+  box-sizing: border-box;
+  font-size: 18px;
+  padding: 10px 20px;
+}
+
+.register-row {
+  margin-top: 5px;
+  width: 100%;
+}
+
+
+
+.register-col-1 {
+  float: left;
+  margin-top: 5px;
+  width: 25%;
+}
+
+.register-col-2 {
+  float: left;
+  margin-top: 5px;
+  width: 75%;
+}
+
+label {
+  padding: 10px 10px 10px 0px;
+}
+
+.form-box {
+  border: 2px solid #0f4c75;
+  border-radius: 2px;
+  display: inline;
+  resize: vertical;
+  padding: 10px;
+  width: 100%;
+}
+
+.form-box:focus {
+  border-color: #bbe1fa;
 }
 
 .footer {
@@ -114,6 +161,7 @@ body {
 
   .header a {
     float: none;
+    margin: 0;
   }
 
   .header-link {
@@ -121,4 +169,17 @@ body {
     padding-top: 20px;
   }
 
+  .content-register {
+    width: 80%;
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+  .register-col-1, .register-col-2 {
+    margin-top: 0px;
+    width: 100%;
+  }
+  
 }
