@@ -3,10 +3,57 @@
   <product type="console">
     <name>Nintendo Switch</name>
     <price>£274.99</price>
-    <description>A console with two Joy Cons that can detach.</description>
+    <description>A console with several different play modes, allowing for both home and handheld gameplay.</description>
     <versions>
       <version>Neon</version>
       <version>Grey</version>
+    </versions>
+  </product>
+  <product type="console">
+    <name>Sony Playstation 4</name>
+    <price>£239.99</price>
+    <description>A powerful console that can run the latest games, with 500GB of storage.</description>
+    <versions>
+      <version>Black</version>
+      <version>White</version>
+    </versions>
+  </product>
+  <product type="console">
+    <name>Microsoft Xbox One S</name>
+    <price>£192.99</price>
+    <description>An upgrade of the standard Xbox One that comes with one wireless controller and 1TB of storage.</description>
+    <versions>
+      <version>White</version>
+      <version>Black</version>
+    </versions>
+  </product>
+  <product type="device">
+    <name>Google Pixel 4</name>
+    <price>£649.00</price>
+    <description>The latest in the Pixel line of phones including 64GB of storage and the latest Android OS.</description>
+    <versions>
+      <version>Clearly White</version>
+      <version>Just Black</version>
+    </versions>
+  </product>
+  <product type="device">
+    <name>Apple iPhone 11</name>
+    <price>£729.00</price>
+    <description>64GB of storage and a clean, modern design and OS are included in this newest iPhone release.</description>
+    <versions>
+      <version>Black</version>
+      <version>White</version>
+      <version>Blue</version>
+      <version>Red</version>
+    </versions>
+  </product>
+  <product type="device">
+    <name>Samsung RU7400 4K Smart TV</name>
+    <price>£374.00</price>
+    <description>Enjoy the highest quality picture and smart TV capabilities in one package, with two size options.</description>
+    <versions>
+      <version>43"</version>
+      <version>55"</version>
     </versions>
   </product>
 </product_list>
