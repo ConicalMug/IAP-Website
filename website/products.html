@@ -6,6 +6,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="style.css">
   <title>Ryan Dennis Online Shop - Products</title>
+  <script type="text/javascript">
+    loadXMLDoc();
+
+    function loadXMLDoc() {
+      var xmlhttp = new XMLHttpRequest();
+      xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          displayProducts(this.responseXML);
+        }
+      };
+      xmlhttp.open("GET", "products.xml", true);
+      xmlhttp.send();
+    }
+
+    function displayProducts(xml) {
+      var txt = "";
+      path = "/product_list/product/name"
+      var nodes = xml.evaluate(path, xml, null, XPathResult.ANY_TYPE, null);
+      var result = nodes.iterateNext();
+      while (result) {
+        txt += result.childNodes[0].nodeValue + "<br>";
+        result = nodes.iterateNext();
+      }
+      document.getElementById('test').innerHTML = txt;
+    }
+  </script>
 </head>
 
 <body>
@@ -19,6 +45,8 @@
   </div>
   <div class="content-body">
     <h1 class="content-header-1">Products</h1>
+    <p id="test">Hello</p>
+
   </div>
   <div class="footer">
     <h2 class="footer-content">Ryan Dennis - N0804540</h2>
