@@ -8,6 +8,7 @@
       <version>Neon</version>
       <version>Grey</version>
     </versions>
+    <image>images\products\switch.jpg</image>
   </product>
   <product type="console">
     <name>Sony Playstation 4</name>
@@ -17,6 +18,7 @@
       <version>Black</version>
       <version>White</version>
     </versions>
+    <image>images\products\ps4.jpg</image>
   </product>
   <product type="console">
     <name>Microsoft Xbox One S</name>
@@ -26,6 +28,7 @@
       <version>White</version>
       <version>Black</version>
     </versions>
+    <image>images\products\xboxones.jpg</image>
   </product>
   <product type="device">
     <name>Google Pixel 4</name>
@@ -35,6 +38,7 @@
       <version>Clearly White</version>
       <version>Just Black</version>
     </versions>
+    <image>images\products\pixel4.jpg</image>
   </product>
   <product type="device">
     <name>Apple iPhone 11</name>
@@ -46,6 +50,7 @@
       <version>Blue</version>
       <version>Red</version>
     </versions>
+    <image>images\products\iphone11.jpg</image>
   </product>
   <product type="device">
     <name>Samsung RU7400 4K Smart TV</name>
@@ -55,5 +60,6 @@
       <version>43"</version>
       <version>55"</version>
     </versions>
+    <image>images\products\ru7400.jpg</image>
   </product>
 </product_list>
