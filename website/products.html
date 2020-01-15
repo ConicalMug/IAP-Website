@@ -21,15 +21,8 @@
     }
 
     function displayProducts(xml) {
-      var txt = "";
-      path = "/product_list/product/name"
+      path = "/product_list/product"
       var nodes = xml.evaluate(path, xml, null, XPathResult.ANY_TYPE, null);
-      var result = nodes.iterateNext();
-      while (result) {
-        txt += result.childNodes[0].nodeValue + "<br>";
-        result = nodes.iterateNext();
-      }
-      document.getElementById('test').innerHTML = txt;
     }
   </script>
 </head>
@@ -43,9 +36,8 @@
       <a id="registration" href="registration.html">Register</a>
     </div>
   </div>
-  <div class="content-body">
+  <div id="product-area" class="content-body">
     <h1 class="content-header-1">Products</h1>
-    <p id="test">Hello</p>
   </div>
   <div class="footer">
     <h2 class="footer-content">Ryan Dennis - N0804540</h2>
