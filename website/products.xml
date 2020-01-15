@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product_list>
+  <product type="console">
+    <name>Nintendo Switch</name>
+    <price>£274.99</price>
+    <description>A console with two Joy Cons that can detach.</description>
+    <versions>
+      <version>Neon</version>
+      <version>Grey</version>
+    </versions>
+  </product>
+</product_list>
