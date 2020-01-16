@@ -76,30 +76,42 @@
     var slideIndex = 1;
     showSlides(slideIndex);
 
+    // Advances to slide n (one forwards or one backwards)
     function plusSlides(n) {
       showSlides(slideIndex += n);
     }
 
+    // Sets current slide to n
     function currentSlide(n) {
       showSlides(slideIndex = n);
     }
 
+    // Displays slide n and hides all others
     function showSlides(n) {
       var i;
       var slides = document.getElementsByClassName("slide");
       var dots = document.getElementsByClassName("slideshow-dot");
+
+      // Loops the slides back to the start if the end is reached
       if (n > slides.length) {
         slideIndex = 1;
       }
+
+      // Loops the slides to the end if heading backwards from the start
       if (n < 1) {
         slideIndex = slides.length;
       }
+
+      // Hides all currently inactive slides
       for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
       }
       for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
       }
+
+      // Displays slideIndex - 1
+      // slideIndex is not used directly to avoid displaying empty slides on the ends
       slides[slideIndex - 1].style.display = "block";
       dots[slideIndex - 1].className += " active";
     }
