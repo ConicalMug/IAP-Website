@@ -43,7 +43,7 @@
         productTable +="<tr>";
         for(i = 0; i < 3; i++) {
           // Inline styling is used as the XML loads after style.css is applied to the page
-          productTable += "<td style='background-color: #0f4c75;border: 2px solid #1b262c;border-radius: 4px;color: #bbe1fa;text-align: center;'><strong>" + currentNode.getElementsByTagName('name')[0].childNodes[0].nodeValue + "</strong> (" + currentNode.getElementsByTagName('price')[0].childNodes[0].nodeValue + ")" + "<br><img src='" + currentNode.getElementsByTagName('image')[0].childNodes[0].nodeValue + "' width='70%' height='20%' style='border-radius: 8px;'><br>" + currentNode.getElementsByTagName('description')[0].childNodes[0].nodeValue + "</td>";
+          productTable += "<td style='background-color: #0f4c75;border: 2px solid #1b262c;border-radius: 4px;color: #bbe1fa;text-align: center;'><strong>" + currentNode.getElementsByTagName('name')[0].childNodes[0].nodeValue + "</strong> (" + currentNode.getElementsByTagName('price')[0].childNodes[0].nodeValue + ")" + "<br><img src='" + currentNode.getElementsByTagName('image')[0].childNodes[0].nodeValue + "' width='100vw' height='100vh' style='border-radius: 8px;'><br>" + currentNode.getElementsByTagName('description')[0].childNodes[0].nodeValue + "</td>";
           currentNode = nodes.iterateNext();
         }
         productTable +="</tr>";
