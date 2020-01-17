@@ -58,6 +58,36 @@
       <h2 class="content-header-2">Registration Form</h2>
       <p class="content-text">For this assignment, the registration form does not need to send user data anywhere. However, it does need to valid user inputs as well as make sure they provide all of the information that the website is looking for.<br><br>To make things easy to understand for users, I opted to make use of red asterisks (<span class="asterisk">*</span>) to indicate to users which fields are required and which are not. This is a common design feature on many websites, particularly those that make use of home addresses because of the various optional components many of them can have, such as house names.<br><br>I also made use of the "required" attribute to ensure the users enter something into fields containing essential information. A "pattern" attribute is used for mobile phone numbers so that a valid UK number format is entered. Lastly, certain fields, such as the email input, are of the email type, meaning that users have to include an @ symbol for the input to be considered valid.<br><br>Once all of the required data has been given and validated, an alert message will tell the user that their registration was successful.</p>
     </div>
+    <hr class="sub-rule">
+    <div class="report-section">
+      <h2 class="content-header-2">Product Display</h2>
+      <p class="content-text">In order to display my products, I had to read them from an XML file using JavaScript. A table was used to format the products in a clean and easy-to-understand tile format, which can be found on many technology websites as it makes side-by-side comparisons slightly easier for users.</p>
+      <img class="report-img" src="images\report\products.png" alt="Products" title="Products" width="60%" height="60%">
+      <p class="content-text caption"><em>The products are laid out in a table format, using a blue tile theme.</em></p>
+      <p class="content-text">Xpath was used to locate the products (in the products.xml file) and two JavaScript functions are used to load the file and display the products accordingly. The full code used can be found with comments in the source of products.html.</p>
+    </div>
+    <hr class="sub-rule">
+    <div class="report-section">
+      <h2 class="content-header-2">Product Slideshow</h2>
+      <p class="content-text">As I alluded to earlier, one key feature of both Amazon and Ebay is a product slideshow on the homepage. It is immediately noticeable to viewers and they can then browse through a small selection of products or promotions. I decided to place mine front and centre in index.html, and clicking the slideshow will bring the users to products.html where they can read the descriptions for the items that they have seen.</p>
+      <div class="report-section">
+        <h3 class="content-header-3">The Slideshow</h3>
+        <p class="content-text-img">The slideshow is programmed in JavaScript, and displays images in a slides folder by rotating them in and out of visibility when the user presses one of several buttons. To the left and right of each slide are buttons to view either the next or previous product, and on the bottom of the slideshow are some circular buttons that can be pressed to jump to a specific slide.<br><br>The slideshow uses the same products that can be found in products.xml so that the user can click on them to explore them in more detail on the dedicated products page. The slideshow itself uses rounded elements and a somewhat blue colour scheme, to allow it to fit in with the rest of the site.</p>
+        <img class="inline-img" src="images\report\slideshow.png" alt="Product Slideshow" title="Slideshow" width="45%" height="45%">
+      </div>
+    </div>
+    <hr class="main-rule">
+    <div class="report-section">
+      <h2 class="content-header-2">References</h2>
+      <p class="content-text">
+        <ol>
+          <li><em>W3Schools, 2020. CSS Reference [online]. W3Schools: CSS Resources. Available at: <a href="https://www.w3schools.com/cssref/default.asp">Click Here</a> [Last Accessed 17th January 2020].</em></li>
+          <li><em>W3Schools, 2020. Xpath Tutorial [online]. W3Schools: Learn Xpath. Available at: <a href="https://www.w3schools.com/xml/xpath_intro.asp">Click Here</a> [Last Accessed 17th January 2020].</em></li>
+          <li><em>colorhunt, 2020. Color Palette 167893 [online]. colorhunt: Trendy Color Palettes. Available at: <a href="https://colorhunt.co/palette/167893">Click Here</a> [Last Accessed 17th January 2020].</em></li>
+        </ol>
+      </p>
+    </div>
+    <hr class="main-rule">
   </div>
   <div class="footer">
     <h2 class="footer-content">Ryan Dennis - N0804540</h2>
