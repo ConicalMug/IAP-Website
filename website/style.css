@@ -24,21 +24,29 @@ body {
 }
 
 .header a {
-  border-radius: 5px;
-  color: #bbe1fa;
   float: left;
-  margin: 0px 5px;
-  padding: 12px;
-  text-decoration: none;
 }
 
 .header-title {
-  font-size: 25px;
-  font-weight: bold;
+  width: 75%;
+  padding: 0px;
 }
 
-.header-link {
+.logo {
+  border-radius: 0px;
+  float: left;
+  margin: 0px;
+  margin-top: 5px;
+  padding: 0px;
+}
+
+.header-link a {
+  border-radius: 5px;
+  color: #bbe1fa;
   float: right;
+  margin: 0px 5px;
+  padding: 12px;
+  text-decoration: none;
 }
 
 .header-link a:hover {
