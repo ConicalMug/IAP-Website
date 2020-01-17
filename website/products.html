@@ -10,9 +10,11 @@
   <script type="text/javascript">
     loadXMLDoc();
 
+    // Prepares products.xml for displayProducts()
     function loadXMLDoc() {
       var xmlhttp = new XMLHttpRequest();
       xmlhttp.onreadystatechange = function() {
+        // Ensures that the page is ready to handle the XML file before displaying begins
         if (this.readyState == 4 && this.status == 200) {
           displayProducts(this.responseXML);
         }
@@ -21,21 +23,34 @@
       xmlhttp.send();
     }
 
+    // Displays products.xml in a table format on the products page
     function displayProducts(xml) {
       var i = 0;
+
+      // The start of a text string that will be read as HTML when loaded on the page
       var productTable = "<table>";
+
+      // Xpath used to navigate the XML file
       path = "/product_list/product"
+
+      // Collects all of the nodes (product entries) in the XML file
       var nodes = xml.evaluate(path, xml, null, XPathResult.ANY_TYPE, null);
+
       var currentNode = nodes.iterateNext();
+
+      // Product nodes are added to the HTML table in rows of 3
       while(currentNode) {
         productTable +="<tr>";
         for(i = 0; i < 3; i++) {
+          // Inline styling is used as the XML loads after style.css is applied to the page
           productTable += "<td style='background-color: #0f4c75;border: 2px solid #1b262c;border-radius: 4px;color: #bbe1fa;text-align: center;'><strong>" + currentNode.getElementsByTagName('name')[0].childNodes[0].nodeValue + "</strong> (" + currentNode.getElementsByTagName('price')[0].childNodes[0].nodeValue + ")" + "<br><img src='" + currentNode.getElementsByTagName('image')[0].childNodes[0].nodeValue + "' width='70%' height='20%' style='border-radius: 8px;'><br>" + currentNode.getElementsByTagName('description')[0].childNodes[0].nodeValue + "</td>";
           currentNode = nodes.iterateNext();
         }
         productTable +="</tr>";
       }
       productTable += "</table>";
+
+      // The table data containing the products is inserted into the page
       document.getElementById('table-area').innerHTML = productTable;
     }
   </script>
